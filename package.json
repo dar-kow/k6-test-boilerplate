@@ -1,0 +1,33 @@
+{
+  "name": "k6-test-boilerplate",
+  "version": "1.0.0",
+  "description": "k6 Performance Testing Boilerplate with best practices and examples",
+  "author": "dar-kow",
+  "license": "MIT",
+  "scripts": {
+    "test": "./run.sh",
+    "test:smoke": "./run.sh -p SMOKE",
+    "test:light": "./run.sh -p LIGHT",
+    "test:medium": "./run.sh -p MEDIUM",
+    "test:heavy": "./run.sh -p HEAVY",
+    "test:get": "./run.sh -t get-endpoint",
+    "test:post": "./run.sh -t post-endpoint",
+    "test:crud": "./run.sh -t crud",
+    "test:sequential": "./sequential-tests.sh",
+    "test:parallel": "./parallel-tests.sh",
+    "test:prod": "./run.sh -h PROD",
+    "test:prod:heavy": "./run.sh -h PROD -p HEAVY"
+  },
+  "keywords": [
+    "k6",
+    "performance",
+    "testing",
+    "load-testing",
+    "stress-testing",
+    "api-testing"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {}
+}
